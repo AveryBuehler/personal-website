@@ -1,3 +1,5 @@
+document.getElementById('particles-js').style.height = (window.innerHeight) - 121 + "px";
+
 new TypeIt('#whoami', {
     speed: 100,
     deleteSpeed: 50,

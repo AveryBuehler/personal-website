@@ -32,10 +32,6 @@ nav {
 main
 
 */
-main #particles-js {
-  height: 848px;
-}
-
 main #hero {
   padding-top: 0 !important;
   position: absolute;

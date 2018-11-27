@@ -115,6 +115,53 @@ img {
   margin-right: 6px;
 }
 
+@media all and (max-width: 2500px) {
+  .hero {
+    padding-right: 35rem;
+  }
+
+  .hero-title {
+    font-size: 90px;
+  }
+
+  .hero-sub {
+    font-size: 22.5px;
+  }
+
+  ul {
+    margin-top: 36px;
+  }
+
+  li a, .fab {
+    font-size: 16.5px;
+  }
+
+  li a {
+    line-height: 26.25px;
+  }
+
+  .fab {
+    margin-right: 3px;
+  }
+
+  #contact .fas {
+    margin-right: 6px;
+  }
+
+  #contact a {
+    font-size: 12.75px;
+  }
+
+  img {
+    height: 337.5px;
+    margin-right: 33.75px;
+  }
+
+  #slice {
+    background: linear-gradient(63deg, rgb(241, 57, 109) 25.2%, rgba(255, 0, 0, 0) 0);
+  }
+}
+
 @media all and (max-width: 1024px) {
   .hero, #contact, #slice {
     display: none;

@@ -30,8 +30,7 @@ body {
 
 .left-main-wrapper {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
 }
 
 .left-main-text {

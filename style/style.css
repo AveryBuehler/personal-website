@@ -141,7 +141,7 @@ body {
 
 .nav-select span {
   cursor: pointer;
-  margin-right: 0.75vw;
+  margin-right: 0.5vw;
 }
 
 .nav-select div:after {
@@ -152,5 +152,5 @@ body {
   height: 2.2vh;
   position: relative;
   vertical-align: middle;
-  width: 0.1vw;
+  width: 0.075vw;
 }

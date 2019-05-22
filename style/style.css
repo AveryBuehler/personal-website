@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 18000px;
 }
 
 .div-left {
@@ -85,7 +86,7 @@ body {
 }
 
 .theme-div {
-  position: absolute;
+  position: fixed;
   left: 25px;
   bottom: 25px;
   display: flex;
@@ -136,7 +137,14 @@ body {
   line-height: 1vw;
   font-weight: 700;
   font-size: 1vw;
-  position: absolute;
+  position: fixed;
+  margin-top: -25px;
+  padding-top: 25px;
+  padding-right: 12.5px;
+  padding-bottom: 12.5px;
+  z-index: 5;
+  padding-left: 12.5px;
+  margin-left: -12.5px;
   top: 25px;
   left: 25px;
 }

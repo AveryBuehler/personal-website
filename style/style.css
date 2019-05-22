@@ -140,29 +140,35 @@ body {
   left: 25px;
 }
 
-.nav-select {
+.nav {
+  user-select: none;
   position: absolute;
-  font-size: 0.95vw;
-  line-height: 0vh;
-  font-weight: 400;
-  top: 25px;
+  bottom: 25px;
   right: 25px;
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-select .nav-select-text {
+  font-family: "Nunito", sans-serif;
   color: #fafafa;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.15vw;
 }
 
-.nav-select span {
-  cursor: pointer;
-  margin-right: 0.5vw;
-}
-
-.nav-select div:after {
-  background-color: #fafafa;
-  content: "";
-  display: inline-block;
-  padding: 0.1vh 0;
-  height: 2.2vh;
-  position: relative;
-  vertical-align: middle;
-  width: 0.075vw;
+.nav-select i {
+  font-weight: 800;
+  padding: 0.1vw;
+  text-align: center;
+  line-height: 2.35vh;
+  margin-left: 0.25vw;
+  font-size: 0.85vw;
+  color: #fafafa;
 }

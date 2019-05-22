@@ -8,7 +8,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .wrapper {
@@ -76,7 +76,7 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
-  border: 1
+  border: 1;
 }
 
 .div-right-bottom {
@@ -117,4 +117,41 @@ body {
 
 .theme-active {
   background: rgba(255, 255, 255, 0.25);
+}
+
+.text-logo {
+  color: #fafafa;
+  line-height: 1vw;
+  font-weight: 700;
+  font-size: 1vw;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.nav-select {
+  position: absolute;
+  font-size: 0.95vw;
+  line-height: 2.2vh;
+  font-weight: 400;
+  top: 25px;
+  right: 25px;
+  text-align: right;
+  color: #fafafa;
+}
+
+.nav-select span {
+  cursor: pointer;
+  margin-right: 0.85vw;
+}
+
+.nav-select div:after {
+  background-color: #fafafa;
+  content: "";
+  display: inline-block;
+  padding: 0.3vh 0;
+  height: 2.2vh;
+  position: relative;
+  vertical-align: middle;
+  width: 0.1vw;
 }

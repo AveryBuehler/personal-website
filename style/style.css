@@ -132,7 +132,7 @@ body {
 .nav-select {
   position: absolute;
   font-size: 0.95vw;
-  line-height: 2.2vh;
+  line-height: 0vh;
   font-weight: 400;
   top: 25px;
   right: 25px;
@@ -142,14 +142,14 @@ body {
 
 .nav-select span {
   cursor: pointer;
-  margin-right: 0.85vw;
+  margin-right: 0.75vw;
 }
 
 .nav-select div:after {
   background-color: #fafafa;
   content: "";
   display: inline-block;
-  padding: 0.3vh 0;
+  padding: 0.1vh 0;
   height: 2.2vh;
   position: relative;
   vertical-align: middle;

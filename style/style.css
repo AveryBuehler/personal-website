@@ -19,7 +19,7 @@ body {
 }
 
 .div-left {
-  background: #a8d0e6;
+  background: #5ab9ea;
   color: #fafafa;
   display: flex;
   flex-direction: column;
@@ -89,20 +89,22 @@ body {
   bottom: 25px;
   display: flex;
   flex-direction: row;
-  width: 5.5vw;
+  width: 9.25vw;
   justify-content: space-between;
 }
 
 .baby-blue,
 .red,
-.navy-blue {
+.navy-blue,
+.green,
+.black {
   width: 1.5vw;
   height: 1.5vw;
   cursor: pointer;
 }
 
 .baby-blue {
-  background: #a8d0e6;
+  background: #5ab9ea;
   pointer-events: none;
 }
 
@@ -114,11 +116,21 @@ body {
   background: #24305e;
 }
 
+.green {
+  background: #5cdb95;
+}
+
+.black {
+  background: #0b0c10;
+}
+
 .theme-active {
   background: rgba(255, 255, 255, 0.25);
 }
 
 .text-logo {
+  user-select: none;
+  cursor: pointer;
   color: #fafafa;
   line-height: 1vw;
   font-weight: 700;

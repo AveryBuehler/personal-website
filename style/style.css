@@ -8,7 +8,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .wrapper {
@@ -20,6 +20,7 @@ body {
 
 .div-left {
   background: #a8d0e6;
+  color: #fafafa;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,27 +28,37 @@ body {
   flex: 3;
 }
 
+.left-main-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .left-main-text {
   color: #fafafa;
-  font-size: 4vw;
-  line-height: 4vw;
+  font-size: 4.25vw;
+  line-height: 4.35vw;
   font-weight: 700;
 }
 
 .main-thin-text {
+  font-style: normal;
   font-weight: 400;
-}
-
-.left-sub-text {
-  color: #fafafa;
-  font-size: 1.35vw;
 }
 
 .div-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1.5;
+  flex: 1;
+}
+
+.div-right-top,
+.div-right-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .div-right-top {
@@ -55,14 +66,55 @@ body {
   background: #f76c6c;
 }
 
+.div-right-top-main-text,
+.div-right-bottom-main-text {
+  border: #fafafa solid 2px;
+  padding: 12px 56px;
+  letter-spacing: 0.175vw;
+  color: #fafafa;
+  font-size: 1.25vw;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1
+}
+
 .div-right-bottom {
   height: 100%;
   background: #24305e;
 }
 
-.white-line {
-  margin: 20px 0;
-  width: 17vw;
-  height: 8px;
-  background: #fafafa;
+.theme-div {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  width: 5.5vw;
+  justify-content: space-between;
+}
+
+.baby-blue,
+.red,
+.navy-blue {
+  width: 1.5vw;
+  height: 1.5vw;
+  cursor: pointer;
+}
+
+.baby-blue {
+  background: #a8d0e6;
+  pointer-events: none;
+}
+
+.red {
+  background: #f76c6c;
+}
+
+.navy-blue {
+  background: #24305e;
+}
+
+.theme-active {
+  background: rgba(255, 255, 255, 0.25);
 }

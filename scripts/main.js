@@ -2,7 +2,6 @@ $(".theme-div")
   .children()
   .click(function() {
     var selected = $(this)[0].className;
-    console.log(selected);
     if (selected != active) {
       var active = selected;
       $(this).css("pointer-events", "none");
@@ -10,9 +9,7 @@ $(".theme-div")
       $(".div-left").css({
         "background-color": background
       });
-
       $(".text-logo").css({ "background-color": background });
-
       $(this).toggleClass("theme-active");
     }
 
@@ -22,3 +19,5 @@ $(".theme-div")
       .css("pointer-events", "auto")
       .removeClass("theme-active");
   });
+
+$(document).ready(function() {});

@@ -32,6 +32,7 @@ body {
 }
 
 .div-left {
+  transition: background 1.5s ease-in-out;
   background: #0b0c10;
   color: #fafafa;
   display: flex;
@@ -47,75 +48,40 @@ body {
 }
 
 .left-main-text {
-  font-style: italic;
+  font-style: normal;
   color: #fafafa;
   font-size: 4.25vw;
   line-height: 4.35vw;
   font-weight: 700;
 }
 
-.left-sub-text {
-  margin-top: 24px;
-  font-size: 0.85vw;
-  font-weight: 300;
-  font-family: "Raleway", sans-serif;
-}
-
 .main-thin-text {
+  user-select: none;
   font-style: normal;
   font-weight: 400;
 }
 
-.navigation {
-  position: absolute;
-  text-align: right;
-  font-size: 0.95vw;
-  line-height: 1.85vh;
-  right: 25px;
-  top: calc(1.5vw + 46px);
-  color: #fafafa;
+.left-sub-text {
+  user-select: none;
+  font-weight: 400;
+  margin-top: 6px;
+  font-size: 1vw;
+  margin-left: -20px;
 }
 
-.navigation div span {
-  cursor: pointer;
-}
-
-.div-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-}
-
-.div-right-top,
-.div-right-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.div-right-top {
-  height: 100%;
-  background: #f76c6c;
-}
-
-.div-right-top-main-text,
-.div-right-bottom-main-text {
-  border: #fafafa solid 2px;
-  padding: 12px 56px;
-  letter-spacing: 0.175vw;
-  color: #fafafa;
-  font-size: 1.25vw;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: 1;
-}
-
-.div-right-bottom {
-  height: 100%;
-  background: #24305e;
+.left-sub-text::before {
+  font-family: "Raleway", sans-serif;
+  content: "+";
+  font-weight: 500;
+  font-size: 2.25vw;
+  width: 20px;
+  text-align: center;
+  top: 11px;
+  right: 11px;
+  display: inline-block;
+  position: relative;
+  box-sizing: inherit;
+  color: #f76c6c;
 }
 
 .theme-div {
@@ -164,6 +130,7 @@ body {
 }
 
 .text-logo {
+  transition: background 1.5s ease-in-out;
   user-select: none;
   cursor: pointer;
   color: #fafafa;
@@ -181,4 +148,37 @@ body {
   margin-left: -12.5px;
   top: 25px;
   left: 25px;
+}
+
+.construction {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 0.5vw;
+  font-weight: 900;
+  bottom: 25px;
+  width: 100%;
+  user-select: none;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Experience */
+
+.experience-header {
+  margin-left: 20px;
+}
+
+.experience-text {
+  text-transform: uppercase;
+  font-size: 2.75vw;
+  font-weight: 900;
+}
+
+.experience-subtext {
+  user-select: none;
+  font-weight: 400;
+  font-size: 0.75vw;
+  font-weight: 700;
 }

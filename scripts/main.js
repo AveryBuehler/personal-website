@@ -10,6 +10,12 @@ $(".theme-div")
         "background-color": background
       });
       $(".text-logo").css({ "background-color": background });
+      $(".diag-line-1").css({
+        "background-color":
+          "linear-gradient(188deg," +
+          background +
+          ", 60%, rgba(255, 0, 0, 0) 0)"
+      });
       $(this).toggleClass("theme-active");
     }
 

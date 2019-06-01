@@ -3,6 +3,8 @@ font-family: 'Nunito', sans-serif; 300, 400 600, 700, 800, 900
 font-family: 'Merriweather', serif; 300, 400, 700, 900
 font-family: 'Playfair Display', serif; 400, 700, 900
 font-family: 'Raleway', sans-serif;
+font-family: 'Domine', serif;
+font-family: 'Titillium Web', sans-serif;
 */
 
 html,
@@ -64,11 +66,10 @@ body {
 .left-sub-text {
   user-select: none;
   font-weight: 400;
-  margin-top: 6px;
+  margin-top: 22px;
   font-size: 1vw;
-  margin-left: -20px;
 }
-
+/*
 .left-sub-text::before {
   font-family: "Raleway", sans-serif;
   content: "+";
@@ -83,6 +84,7 @@ body {
   box-sizing: inherit;
   color: #f76c6c;
 }
+*/
 
 .theme-div {
   position: absolute;
@@ -166,19 +168,52 @@ body {
 
 /* Experience */
 
+.experience {
+  margin-top: 2vw;
+  margin-left: 6.5vw;
+}
+
 .experience-header {
-  margin-left: 20px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 .experience-text {
-  text-transform: uppercase;
+  color: #0b0c10;
+  font-family: "Domine", serif;
   font-size: 2.75vw;
-  font-weight: 900;
+  font-weight: 700;
 }
 
-.experience-subtext {
-  user-select: none;
-  font-weight: 400;
-  font-size: 0.75vw;
+.experience-sub {
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  color: #eb1736;
+  font-size: 0.8vw;
   font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.75vw;
+}
+
+.experience-sub::before {
+  content: "/";
+  display: inline-block;
+  right: 8px;
+  color: #eb1736;
+  font-weight: 700;
+  position: relative;
+  box-sizing: inherit;
+}
+
+.experience-list .company {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 0.9vw;
+  font-weight: 600;
+}
+
+.experience-list .description {
+  position: relative;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 0.8vw;
+  font-weight: 400;
 }

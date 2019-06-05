@@ -334,7 +334,7 @@ body {
   content: "+";
   display: inline-block;
   left: -1.85rem;
-  top: -0.0142rem;
+  top: -0.175rem;
   color: #eb1736;
   font-weight: 700;
   position: absolute;
@@ -396,6 +396,73 @@ body {
   font-weight: 700;
   position: relative;
   box-sizing: inherit;
+}
+
+.school-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.map-container {
+  position: relative;
+  width: 38rem;
+  height: 30rem;
+  margin-right: 3.5rem;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.school-div {
+  color: #f5f5f5;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.gm-style-cc {
+  display: none !important;
+}
+
+.gm-style a[href^="https://maps.google.com/maps"] {
+  display: none !important;
+}
+
+.school-name {
+  font-family: "Domine", serif;
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: #fafafa;
+  margin-bottom: 0.5rem;
+}
+
+.degree-name {
+  font-family: "Domine", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fafafa;
+  margin-bottom: 0.5rem;
+}
+
+.minor-name {
+  font-family: "Domine", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fafafa;
+}
+
+.school-name-label,
+.degree-label,
+.minor-label {
+  user-select: none;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.0525rem;
+  color: #373737
 }
 
 /* Resume */
@@ -476,7 +543,7 @@ body {
 }
 
 .button-div:first-child {
-  margin-top: 1rem;
+  margin-top: 1.75rem;
   margin-bottom: 1rem;
 }
 
@@ -569,4 +636,153 @@ body {
   font-weight: 700;
   position: relative;
   box-sizing: inherit;
+}
+
+.contact-container * {
+  box-sizing: border-box;
+}
+
+.contact-container {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.contact-container form {
+  background: transparent;
+  padding: 1.6rem;
+  overflow: hidden;
+}
+
+.contact-container form .contact-form-group {
+  position: relative;
+  float: left;
+  width: 43.2%;
+  margin: 1.5rem;
+}
+
+.contact-container form .contact-form-group.contact-name {
+  width: calc(35% - 3rem);
+}
+
+.contact-container form .contact-form-group.contact-email {
+  width: calc(65% - 3rem);
+}
+
+.contact-container form .contact-form-group.contact-full {
+  width: calc(100% - 3rem);
+}
+
+.contact-container form .contact-form-group label {
+  position: absolute;
+  top: -0.25rem;
+  left: -0.85rem;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #fafafa;
+  padding: 1.6rem 0;
+  pointer-events: none;
+  transition: all .25s ease;
+}
+
+.contact-container form .contact-form-group label:before {
+  content: "+";
+  display: inline-block;
+  top: -0.175rem;
+  right: 0.85rem;
+  font-weight: 700;
+  position: relative;
+  box-sizing: inherit;
+}
+
+.contact-container input,
+.contact-container textarea {
+  background-color: transparent;
+  padding-top: 1.65rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  border: 0;
+  border-bottom: 1px solid #fafafa;
+  width: 100%;
+  color: #fafafa;
+  transition: all .25s ease;
+}
+
+.contact-container textarea:focus,
+.contact-container input:focus {
+  border: 0;
+  border-bottom: 1px solid #0b0c10;
+}
+
+.contact-container input~span,
+.contact-container textarea~span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: #eb1736;
+  height: 2px;
+  transition: all .125s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  outline: 0;
+}
+
+.contact-container input:focus~label,
+.contact-container input.not-empty~label,
+.contact-container textarea:focus~label,
+.contact-container textarea.not-empty~label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #eb1736;
+  top: -2.25rem;
+  transition: all .25s ease;
+  background: #0b0c10;
+  padding-bottom: 0;
+  user-select: none;
+}
+
+.contact-container input:focus~span,
+.contact-container textarea:focus~span {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.contact-container textarea {
+  min-height: 14rem;
+  resize: none;
+}
+
+/*
+.contact-textarea {
+  height: 8rem;
+  width: 42rem;
+  background-image: url(../assets/stripes-light.png);
+  background-size: 20rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  color: #0b0c10;
+  font-weight: 500;
+}
+*/
+
+.social-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 28rem;
+}
+
+.social-buttons a {
+  text-decoration: none;
+  fill: #fafafa;
+  transition: 0.25s ease-in-out;
+}
+
+.social-buttons a:hover {
+  fill: #eb1736;
 }

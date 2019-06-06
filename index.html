@@ -55,6 +55,15 @@
     <div class="black theme-active"></div>
   </div>
 
+  <div class="back2top">
+    <div class="back2top-rel">
+      <div class="back2top-flex">
+        <div class="back2top-text">RETURN TO TOP</div>
+        <div class="back2top-svg"></div>
+      </div>
+    </div>
+  </div>
+
   <div class="exp-background">
     <div class="experience">
       <div class="experience-header">
@@ -142,27 +151,36 @@
       <div class="education-header">
         <div class="education-sub">education</div>
         <div class="education-text">
-          This is where I've gone to school.
+          This is where I went to school.
         </div>
       </div>
       <div class="school-flex">
-        <div class="map-container">
-          <div id="map"></div>
+        <div class="school-img">
+          <div class="map-container-bg"></div>
+          <div class="map-container">
+            <div class="map-container-p1"></div>
+            <div class="map-container-p2"></div>
+            <div class="map-container-p3"></div>
+            <div class="map-container-p4"></div>
+            <div class="lat-long-text"><a href="https://apps.cur.org/ncur2019/search/Display_NCUR.aspx?id=111412"
+                target="_blank">Kennesaw State University in Georgia (2019)</a></div>
+            <div id="map"></div>
+          </div>
         </div>
         <div class="school-div">
-          <div class="school-name-label">School Name</div>
+          <div class="school-label">School</div>
           <div class="school-name">University of Hartford</div>
           <div class="degree-label">Degree</div>
-          <div class="degree-name">B.Sc. in Computer Science</div>
+          <div class="degree-name">Computer Science</div>
           <div class="minor-label">Minor</div>
           <div class="minor-name">Mathematics</div>
-          <div>Bachelor of Science in Computer Science</div>
-          <div>University Honors with Thesis</div>
-          <div>Analysis of Neural Networks with Time Delays</div>
-          <div>August 2015 - May 2019</div>
-          <div>GPA: 3.93/4.00</div>
-          <div>Honors and Awards</div>
-          <div>Interesting Courses</div>
+          <div class="gpa-label">Grade Point Average</div>
+          <div class="gpa-name">Summa cum laude (3.93)</div>
+          <div class="attended-label">Graduation Date</div>
+          <div class="attended-name">May 2019</div>
+          <div class="location-label">Location</div>
+          <div class="location-name">West Hartford, CT</div>
+
         </div>
       </div>
     </div>
@@ -272,8 +290,6 @@
 
   <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHP_-kapi6nQki-gEqvNTyAv2WcJVgo3k&callback=initMap"
-    async defer></script>
 </body>
 
 </html>
